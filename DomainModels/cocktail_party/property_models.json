@@ -556,8 +556,17 @@
     "schema_description": "The original length of the recording.",
     "schema_type": "property_model",
     "json_schema": {
-      "type": "string"
-      }
+      "type": "integer"
     }
+  },
+  {
+    "schema_name": "story",
+    "schema_title": "Story",
+    "schema_description": "The Name of the Story.",
+    "schema_type": "property_model",
+    "json_schema": {
+      "type": "string"
+    }
+  }
 ]
 

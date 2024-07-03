@@ -4,6 +4,8 @@ data/
 *.csv
 *.xlsx
 
+SignalStore/
+
 # permanent data directories to ignore
 data/internal/
 data/output/
