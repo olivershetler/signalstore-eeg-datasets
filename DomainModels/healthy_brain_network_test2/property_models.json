@@ -98,6 +98,16 @@
       }
     },
     {
+      "schema_name": "modality",
+      "schema_title": "Modality",
+      "schema_description": "Recording modality",
+      "schema_type": "property_model",
+      "json_schema": {
+        "type": "string",
+        "pattern": "[EEG, ECoG, MEG, LFP, Spike, Stimuli, Behavioral]"
+      }
+    },
+    {
       "schema_name": "json_schema",
       "schema_title": "JSON Schema Body",
       "schema_description": "The body of a schema. This is a JSON Schema that describes the structure of a record or data object.",
@@ -252,7 +262,15 @@
       "json_schema": {
         "type": "string"
       }
-    }, 
+    },
+    {"schema_name": "session_run",
+    "schema_title": "Run",
+    "schema_description": "Session run number",
+    "schema_type": "property_model",
+    "json_schema": {
+      "type": "integer"
+      }
+    },
     {
       "schema_name": "data_ref",
       "schema_title": "Data Reference",
@@ -566,6 +584,14 @@
     "schema_type": "property_model",
     "json_schema": {
       "type": "string"
+    }
+  },
+  {"schema_name": "task",
+  "schema_title": "Task",
+  "schema_description": "The task subject performs.",
+  "schema_type": "property_model",
+  "json_schema": {
+    "type": "string"
     }
   }
 ]

@@ -4,7 +4,7 @@
     "schema_title": "EEG Signal",
     "schema_description": "A data model for EEG signal data.",
     "schema_type": "data_model",
-    "metamodel_ref": "xarray_dataarray_metamodel", 
+    "metamodel_ref": "xarray_dataarray_metamodel",
     "json_schema": {
         "type": "object",
         "properties": {
@@ -23,6 +23,16 @@
             },
             "sampling_frequency": {
                 "type": "integer"
+            },
+            "task": {
+                "type": "string"
+            }, 
+            "session_run": {
+                "type": "integer"
+            },
+            "modality": {
+                "type": "string",
+                "const": "EEG"
             }
         }
     }
